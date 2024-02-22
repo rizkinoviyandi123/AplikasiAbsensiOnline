@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/list_riwayat_items"
+                    android:layout_width="0dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/box_riwayat"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/list_riwayat_items"
+                    app:layout_constraintTop_toTopOf="@id/list_riwayat_items"
+                    tools:text="Senin," />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    tools:text="01 Januari 2024" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/box_riwayat_status"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    app:layout_constraintEnd_toEndOf="@+id/list_riwayat_items"
+                    app:layout_constraintTop_toTopOf="@+id/textView8"
+                    tools:text="Hadir"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textAlignment="center"
+                    android:textColor="#013D79"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/list_riwayat_items"
+                    app:layout_constraintHorizontal_bias="0.66"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    tools:text="08.00" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textAlignment="center"
+                    android:textColor="#013D79"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.028"
+                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintTop_toTopOf="@+id/textView11"
+                    tools:text=" - " />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textAlignment="center"
+                    android:textColor="#013D79"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView10"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toTopOf="@+id/textView12"
+                    tools:text="15.00" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

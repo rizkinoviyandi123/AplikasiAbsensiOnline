@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationBottom">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="@drawable/bg_view2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_view" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins"
+        android:text="Selamat Pagi,"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Rizki Noviyandi"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Silahkan Absen Terlebih Dahulu"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Riwayat Absensi"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/poppins"
+        android:text="Pekan Terakhir"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/poppins"
+        android:text="Lihat Semua"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/pop"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_riwayat"
+        android:elevation="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="25dp"
+        android:text="Senin, 01 Januari 2024"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_riwayat"
+        android:elevation="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_riwayat"
+        android:elevation="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_riwayat"
+        android:elevation="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="850dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_riwayat"
+        android:elevation="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_riwayat"
+        android:elevation="20dp" />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_account" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/blue"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation_menu" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_qr_code_scanner"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="30dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

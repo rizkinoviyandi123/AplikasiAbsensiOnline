@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Selamat Datang,"
+        android:textColor="#2A2B3D"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Login untuk masuk Aplikasi"
+        android:textColor="#738599"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="206dp"
+        android:src="@drawable/education"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+        
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:textSize="14dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:textSize="14dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"/>
+
+        <CheckBox
+            android:id="@+id/lihatPassword"
+            android:drawableLeft="@drawable/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lihat Password"
+            android:textSize="14dp"
+            android:textColor="#738599"
+            android:fontFamily="@font/poppins"
+            android:button="@null"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#013D79"
+            app:cornerRadius="10dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
